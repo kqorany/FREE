@@ -1,4 +1,4 @@
-# FREE
+# LoRaFREE
 
 This repository contains LoRaFREE, a new simulator tool that have been used in [1]. Please cite the paper if you used LoRaFREE in your research.
 

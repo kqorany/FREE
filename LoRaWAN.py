@@ -700,7 +700,7 @@ TX = [22, 22, 22, 23,                                      # RFO/PA0: -2..1
 RX = 16
 V = 3.0     # voltage XXX
 sent = sum(n.sent for n in nodes)
-energy = sum((node.packet.rectime * node.sent * TX[int(node.packet.txpow)+2])+(node.rxtime * RX) * V  for node in nodes)  / 1e3
+energy = sum(((node.packet.rectime * node.sent * TX[int(node.packet.txpow)+2])+(node.rxtime * RX)) * V  for node in nodes)  / 1e3
 
 print "energy (in J): ", energy
 print "sent packets: ", sent
